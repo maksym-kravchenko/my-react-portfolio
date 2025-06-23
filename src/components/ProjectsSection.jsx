@@ -64,7 +64,7 @@ export const ProjectsSection = () => {
                                 <div className="flex justify-center items-center">
                                     <a href={project.demoUrl}
                                        target="_blank"
-                                       className="px-6 py-2 flex gap-3 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">
+                                       className="cosmic-button-outline flex gap-2">
                                         <ExternalLink size={20}/> Open
                                     </a>
                                 </div>

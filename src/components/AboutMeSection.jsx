@@ -22,8 +22,8 @@ export const AboutMeSection = () => {
                         <p className="text-muted-foreground">
                             Currently, I specialize in back-end development as part of a full-stack team. I focus on
                             building scalable, secure, and high-performance server-side systems — from APIs to database
-                            architecture — while also contributing to front-end features when needed. This full-stack
-                            flexibility allows me to support smooth, end-to-end product development.
+                            architecture — while also contributing to front-end features when needed. <strong>This full-stack
+                            flexibility allows me to support smooth, end-to-end product development.</strong>
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -31,7 +31,7 @@ export const AboutMeSection = () => {
                                 Get In Touch
                             </a>
 
-                            <a className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">
+                            <a className="cosmic-button-outline">
                                 Open CV
                             </a>
                         </div>
