@@ -1,33 +1,33 @@
-import React, { useEffect, useRef } from "react";
+import React, {useEffect, useRef} from "react";
 import Flickity from "flickity";
 import "flickity/css/flickity.css";
 
 const photos = [
-    "/profile-imgs/photo1.JPG",
-    "/profile-imgs/photo2.JPG",
-    "/profile-imgs/photo3.JPG",
+    "/profile-imgs/photo1.jpg",
+    "/profile-imgs/photo2.jpg",
+    "/profile-imgs/photo3.jpg",
 ];
 
 const Carousel = () => {
     const flickityRef = useRef(null);
 
     useEffect(() => {
-        const flkty = new Flickity(flickityRef.current, {
-            cellAlign: "left",
+        const flickity = new Flickity(flickityRef.current, {
             wrapAround: true,
             freeScroll: true,
             autoPlay: true,
-            contain: true,
         });
 
-        return () => flkty.destroy();
+        return () => flickity.destroy();
     }, []);
 
     return (
-        <div className="carousel" ref={flickityRef}>
-            <div className="carousel-cell">1</div>
-            <div className="carousel-cell">2</div>
-            <div className="carousel-cell">3</div>
+        <div className="carousel w-full flickity-custom-carousel" ref={flickityRef}>
+            {photos.map((photo, key) => (
+                <div key={key} className="carousel-cell w-[75%] h-80 mr-2 bg-card rounded-lg overflow-hidden shadow-xs">
+                    <img loading="lazy" src={photo} alt={photo} className="w-full h-full object-cover rounded-lg" />
+                </div>
+            ))}
         </div>
     );
 };

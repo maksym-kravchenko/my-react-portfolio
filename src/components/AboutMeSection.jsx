@@ -1,4 +1,5 @@
-import {Briefcase, CodeXml, Handshake, User} from "lucide-react";
+import {Briefcase, CodeXml, Handshake} from "lucide-react";
+import Carousel from "@/components/ui/Carousel.jsx";
 
 export const AboutMeSection = () => {
     return (
@@ -9,31 +10,29 @@ export const AboutMeSection = () => {
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    <div className="space-y-6">
-                        <h3 className="text-2xl font-semibold">Passionate Web & Desktop Developer</h3>
+                    <div className="bg-card rounded-lg overflow-hidden shadow-xs">
+                        <Carousel/>
+                        <div className="space-y-6 p-6 pt-10">
+                            <h3 className="text-2xl font-semibold">Passionate Web & Desktop Developer</h3>
 
-                        <p className="text-muted-foreground">
-                            I'm a software developer with over five years of experience, spanning personal projects and
-                            production-ready applications built within collaborative development teams. Throughout my
-                            journey, I've worked across various tech stacks, honing my skills in writing clean,
-                            efficient, and maintainable code while delivering real-world solutions that users rely on.
-                        </p>
+                            <p className="text-muted-foreground">
+                                I specialize in back-end development as part of a full-stack team. I focus on
+                                building scalable, secure, and high-performance server-side systems — from APIs to
+                                database
+                                architecture — while also contributing to front-end features when needed. <strong>This
+                                full-stack
+                                flexibility allows me to support smooth, end-to-end product development.</strong>
+                            </p>
 
-                        <p className="text-muted-foreground">
-                            Currently, I specialize in back-end development as part of a full-stack team. I focus on
-                            building scalable, secure, and high-performance server-side systems — from APIs to database
-                            architecture — while also contributing to front-end features when needed. <strong>This full-stack
-                            flexibility allows me to support smooth, end-to-end product development.</strong>
-                        </p>
+                            <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
+                                <a href="#contact" className="cosmic-button">
+                                    Get In Touch
+                                </a>
 
-                        <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-                            <a href="#contact" className="cosmic-button">
-                                Get In Touch
-                            </a>
-
-                            <a className="cosmic-button-outline">
-                                Open CV
-                            </a>
+                                <a href="/files/CV_English.pdf" target="_blank" className="cosmic-button-outline">
+                                    Open CV
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -43,7 +42,7 @@ export const AboutMeSection = () => {
                                 <div className="p-3 rounded-full bg-primary/10">
                                     <CodeXml className="h-6 w-6"/>
                                 </div>
-                                <div className="text-left">
+                                <div className="text-left space-y-3">
                                     <h4 className="font-semibold text-lg">IT journey</h4>
 
                                     <p className="text-muted-foreground">
@@ -51,7 +50,16 @@ export const AboutMeSection = () => {
                                         through university projects, competitive programming, and hands-on development.
                                         Today, I focus on creating <strong>practical, long-lasting
                                         solutions</strong> that help real
-                                        products run smoothly and reliably.
+                                        products run smoothly and reliably.</p>
+
+                                    <p className="text-muted-foreground">
+                                        Throughout
+                                        my
+                                        journey, I've worked across various tech stacks, honing my skills in writing
+                                        clean,
+                                        efficient, and maintainable code while delivering real-world solutions that
+                                        users rely
+                                        on.
                                     </p>
                                 </div>
                             </div>
@@ -61,7 +69,7 @@ export const AboutMeSection = () => {
                                 <div className="p-3 rounded-full bg-primary/10">
                                     <Handshake className="h-6 w-6"/>
                                 </div>
-                                <div className="text-left">
+                                <div className="text-left space-y-3">
                                     <h4 className="font-semibold text-lg">Team Collaboration & Clients</h4>
 
                                     <p className="text-muted-foreground">
@@ -78,7 +86,7 @@ export const AboutMeSection = () => {
                                 <div className="p-3 rounded-full bg-primary/10">
                                     <Briefcase className="h-6 w-6"/>
                                 </div>
-                                <div className="text-left">
+                                <div className="text-left space-y-3">
                                     <h4 className="font-semibold text-lg">Real-World Experience</h4>
 
                                     <p className="text-muted-foreground">

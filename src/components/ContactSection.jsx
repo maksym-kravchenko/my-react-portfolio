@@ -1,5 +1,4 @@
-import {Linkedin, Instagram, Send, Mail, MapPin, PhoneCall, SendHorizonal, Github} from "lucide-react";
-import Carousel from "./ui/Carousel";
+import {Linkedin, Instagram, Send, Mail, MapPin, PhoneCall, Github} from "lucide-react";
 
 export const ContactSection = () => {
     return (
@@ -14,7 +13,7 @@ export const ContactSection = () => {
                     Feel free to reach out — I’m always open to new opportunities and great conversations.
                 </p>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                     <div className="flex flex-col gap-12">
                         <h3 className="text-2xl font-semibold">Contact Information</h3>
 
@@ -57,36 +56,32 @@ export const ContactSection = () => {
                                 </div>
                             </div>
                         </div>
-
-                        <div className="flex flex-col gap-4">
-                            <h3 className="text-xl font-semibold">Connect With Me</h3>
-                            <div className="flex space-x-4 justify-center">
-                                <a href="https://www.linkedin.com/in/maksym-kravchenko-16j07/"
-                                   className="text-foreground hover:text-primary transition-colors duration-300"
-                                   target="_blank">
-                                    <Linkedin/>
-                                </a>
-                                <a href="https://www.instagram.com/maksyym.k/"
-                                   className="text-foreground hover:text-primary transition-colors duration-300"
-                                   target="_blank">
-                                    <Instagram/>
-                                </a>
-                                <a href="https://t.me/vizzy1234"
-                                   className="text-foreground hover:text-primary transition-colors duration-300"
-                                   target="_blank">
-                                    <Send/>
-                                </a>
-                                <a href="https://github.com/maksym-kravchenko"
-                                   className="text-foreground hover:text-primary transition-colors duration-300"
-                                   target="_blank">
-                                    <Github/>
-                                </a>
-                            </div>
-                        </div>
                     </div>
 
-                    <div>
-                        <Carousel />
+                    <div className="flex flex-col gap-12">
+                        <h3 className="text-2xl font-semibold">Connect With Me</h3>
+                        <div className="flex space-x-4 justify-center">
+                            <a href="https://www.linkedin.com/in/maksym-kravchenko-16j07/"
+                               className="text-foreground hover:text-primary transition-colors duration-300"
+                               target="_blank">
+                                <Linkedin/>
+                            </a>
+                            <a href="https://www.instagram.com/maksyym.k/"
+                               className="text-foreground hover:text-primary transition-colors duration-300"
+                               target="_blank">
+                                <Instagram/>
+                            </a>
+                            <a href="https://t.me/vizzy1234"
+                               className="text-foreground hover:text-primary transition-colors duration-300"
+                               target="_blank">
+                                <Send/>
+                            </a>
+                            <a href="https://github.com/maksym-kravchenko"
+                               className="text-foreground hover:text-primary transition-colors duration-300"
+                               target="_blank">
+                                <Github/>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

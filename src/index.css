@@ -160,6 +160,20 @@
     box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
 }
 
+@utility flickity-custom-carousel {
+    .flickity-button {
+        box-shadow: none !important;
+    }
+
+    .flickity-page-dot {
+        background-color: color-mix(in oklab, var(--color-primary) 50%, transparent) !important;
+    }
+
+    .flickity-page-dot.is-selected {
+        background-color: var(--color-primary) !important;
+    }
+}
+
 #root {
     max-width: 100%;
     margin: 0 auto;
