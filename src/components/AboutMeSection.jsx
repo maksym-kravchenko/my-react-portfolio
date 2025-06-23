@@ -39,7 +39,7 @@ export const AboutMeSection = () => {
 
                     <div className="grid grid-cols-1 gap-6">
                         <div className="gradient-border p-6 card-hover">
-                            <div className="flex items-start gap-4">
+                            <div className="flex flex-col sm:flex-row md:flex-col lg:flex-row items-start gap-4">
                                 <div className="p-3 rounded-full bg-primary/10">
                                     <CodeXml className="h-6 w-6"/>
                                 </div>
@@ -57,7 +57,7 @@ export const AboutMeSection = () => {
                             </div>
                         </div>
                         <div className="gradient-border p-6 card-hover">
-                            <div className="flex items-start gap-4">
+                            <div className="flex flex-col sm:flex-row md:flex-col lg:flex-row items-start gap-4">
                                 <div className="p-3 rounded-full bg-primary/10">
                                     <Handshake className="h-6 w-6"/>
                                 </div>
@@ -74,7 +74,7 @@ export const AboutMeSection = () => {
                             </div>
                         </div>
                         <div className="gradient-border p-6 card-hover">
-                            <div className="flex items-start gap-4">
+                            <div className="flex flex-col sm:flex-row md:flex-col lg:flex-row items-start gap-4">
                                 <div className="p-3 rounded-full bg-primary/10">
                                     <Briefcase className="h-6 w-6"/>
                                 </div>

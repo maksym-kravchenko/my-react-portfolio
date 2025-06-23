@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 
 export const StarBackground = () => {
     const [stars, setStars] = useState([]);
@@ -9,7 +9,10 @@ export const StarBackground = () => {
         generateMeteors();
 
         const handleResize = () => {
-            generateStars();
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+                generateStars();
+            }, 200);
         }
 
         window.addEventListener('resize', handleResize);
@@ -63,7 +66,7 @@ export const StarBackground = () => {
                     top: `${star.y}%`,
                     opacity: star.opacity,
                     animationDuration: `${star.animationDuration}s`,
-                }}/>
+                }} />
             ))}
 
             {meteors.map((meteor) => (
@@ -74,7 +77,7 @@ export const StarBackground = () => {
                     top: `${meteor.y}%`,
                     animationDelay: meteor.opacity,
                     animationDuration: `${meteor.animationDuration}s`,
-                }}/>
+                }} />
             ))}
         </div>
     );
