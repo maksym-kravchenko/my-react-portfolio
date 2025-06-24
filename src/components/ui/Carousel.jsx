@@ -24,7 +24,7 @@ const Carousel = () => {
     return (
         <div className="carousel w-full flickity-custom-carousel" ref={flickityRef}>
             {photos.map((photo, key) => (
-                <div key={key} className="carousel-cell w-[75%] h-80 mr-2 bg-card rounded-lg overflow-hidden shadow-xs">
+                <div key={key} className="carousel-cell w-full md:w-[75%] h-80 mr-2 bg-card rounded-lg overflow-hidden shadow-xs">
                     <img loading="lazy" src={photo} alt={photo} className="w-full h-full object-cover rounded-lg" />
                 </div>
             ))}
