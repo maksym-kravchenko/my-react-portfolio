@@ -167,10 +167,18 @@
 
     .flickity-page-dot {
         background-color: color-mix(in oklab, var(--color-primary) 50%, transparent) !important;
+        box-shadow: none !important;
     }
 
     .flickity-page-dot.is-selected {
         background-color: var(--color-primary) !important;
+    }
+
+    @media (width < 768px) {
+        .flickity-button {
+            display: none !important;
+            opacity: 0 !important;
+        }
     }
 }
 

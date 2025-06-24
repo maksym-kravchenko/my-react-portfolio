@@ -14,11 +14,11 @@ export const ContactSection = () => {
                 </p>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                    <div className="flex flex-col gap-12">
+                    <div className="flex flex-col gap-12 justify-center items-center">
                         <h3 className="text-2xl font-semibold">Contact Information</h3>
 
-                        <div className="space-y-6 justify-center">
-                            <div className="flex flex-col items-center space-y-4  lg:flex-row lg:items-start lg:space-x-4">
+                        <div className="space-y-6 flex flex-col justify-center items-center w-max">
+                            <div className="flex flex-col items-center max-lg:space-y-4 lg:flex-row lg:items-start lg:space-x-4 bg-card card-hover py-3 px-6 rounded-lg w-full">
                                 <div className="p-3 rounded-full bg-primary/10">
                                     <Mail className="h-6 w-6" />
                                 </div>
@@ -31,7 +31,7 @@ export const ContactSection = () => {
                                 </div>
                             </div>
 
-                            <div className="flex flex-col items-center space-y-4  lg:flex-row lg:items-start lg:space-x-4">
+                            <div className="flex flex-col items-center max-lg:space-y-4 lg:flex-row lg:items-start lg:space-x-4 bg-card card-hover py-3 px-6 rounded-lg w-full">
                                 <div className="p-3 rounded-full bg-primary/10">
                                     <PhoneCall className="h-6 w-6" />
                                 </div>
@@ -44,7 +44,7 @@ export const ContactSection = () => {
                                 </div>
                             </div>
 
-                            <div className="flex flex-col items-center space-y-4  lg:flex-row lg:items-start lg:space-x-4">
+                            <div className="flex flex-col items-center max-lg:space-y-4 lg:flex-row lg:items-start lg:space-x-4 bg-card card-hover py-3 px-6 rounded-lg w-full">
                                 <div className="p-3 rounded-full bg-primary/10">
                                     <MapPin className="h-6 w-6" />
                                 </div>
@@ -58,26 +58,26 @@ export const ContactSection = () => {
                         </div>
                     </div>
 
-                    <div className="flex flex-col gap-12">
+                    <div className="flex flex-col gap-12 items-center">
                         <h3 className="text-2xl font-semibold">Connect With Me</h3>
-                        <div className="flex space-x-4 justify-center">
+                        <div className="grid grid-cols-2 gap-6 w-max">
                             <a href="https://www.linkedin.com/in/maksym-kravchenko-16j07/"
-                                className="text-foreground hover:text-primary active:text-primary transition-colors duration-300"
+                                className="text-foreground hover:text-primary active:text-primary transition-colors duration-300 w-max bg-card p-3 rounded-lg card-hover"
                                 target="_blank">
                                 <Linkedin />
                             </a>
                             <a href="https://www.instagram.com/maksyym.k/"
-                                className="text-foreground hover:text-primary active:text-primary transition-colors duration-300"
+                                className="text-foreground hover:text-primary active:text-primary transition-colors duration-300 w-max bg-card p-3 rounded-lg card-hover"
                                 target="_blank">
                                 <Instagram />
                             </a>
                             <a href="https://t.me/vizzy1234"
-                                className="text-foreground hover:text-primary active:text-primary transition-colors duration-300"
+                                className="text-foreground hover:text-primary active:text-primary transition-colors duration-300 w-max bg-card p-3 rounded-lg card-hover"
                                 target="_blank">
                                 <Send />
                             </a>
                             <a href="https://github.com/maksym-kravchenko"
-                                className="text-foreground hover:text-primary active:text-primary transition-colors duration-300"
+                                className="text-foreground hover:text-primary active:text-primary transition-colors duration-300 w-max bg-card p-3 rounded-lg card-hover"
                                 target="_blank">
                                 <Github />
                             </a>
